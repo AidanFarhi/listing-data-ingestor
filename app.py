@@ -65,5 +65,6 @@ def main():
 	zipcodes = get_list_of_zip_codes()
 	get_results_for_zipcodes(zipcodes)
 
+
 if __name__ == '__main__':
 	main()
