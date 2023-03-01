@@ -28,6 +28,7 @@ load_dotenv()
 # 	    Body=json_data
 # 	)
 
+
 def get_list_of_zip_codes():
 	conn_params = {
 		'user': os.getenv('SNOWFLAKE_USERNAME'),
