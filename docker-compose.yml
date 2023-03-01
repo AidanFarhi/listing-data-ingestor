@@ -4,6 +4,4 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile.dev
-    volumes:
-      - ./raw_data:/app/raw_data
     network_mode: host
