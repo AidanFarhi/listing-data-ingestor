@@ -24,8 +24,8 @@ def get_results_for_zipcodes(zipcodes, api_key):
 		'X-RapidAPI-Host': 'realty-mole-property-api.p.rapidapi.com'
 	}
 	results = []
-	for zip in list(zipcodes)[:3]:
-		sleep(.6)
+	for zip in list(zipcodes):
+		sleep(.6) # TODO: is this needed?
 		querystring['zipCode'] = zip
 		response = requests.get(url=url, headers=headers, params=querystring)
 		results.append(response.json())
