@@ -25,10 +25,11 @@ def get_results_for_zipcodes(zipcodes, api_key):
 	}
 	results = []
 	for zip in list(zipcodes)[:5]:
-		sleep(.55) # there is a rate limit of 2 requests per second
+		sleep(.75) # there is a rate limit of 2 requests per second
 		querystring['zipCode'] = zip
 		response = requests.get(url=url, headers=headers, params=querystring)
 		results.append(response.json())
+		print(response.json())
 	return results
 
 def load_results_to_s3(client, results, bucket_name):
