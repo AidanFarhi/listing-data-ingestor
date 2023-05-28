@@ -29,7 +29,6 @@ def get_results_for_zipcodes(zipcodes, api_key):
 		querystring['zipCode'] = zip
 		response = requests.get(url=url, headers=headers, params=querystring)
 		results.append(response.json())
-		print(response.json())
 	return results
 
 def load_results_to_s3(client, results, bucket_name):
