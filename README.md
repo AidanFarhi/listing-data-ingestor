@@ -1,4 +1,4 @@
-## This script extracts real estate data from an api and loads it to an S3 bucket.
+## This script extracts real estate listing data from an api and ingests it to an S3 data lake.
 
 #### To run locally
 
